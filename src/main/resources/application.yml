@@ -1,0 +1,6 @@
+server:
+  port: 5900
+
+spring:
+  main:
+    web-application-type: servlet
