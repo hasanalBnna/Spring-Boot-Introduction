@@ -19,6 +19,26 @@ public class Main {
         return new GreetResponse("Hello World");
     }
 
-    record GreetResponse(String greeting){}
+//    record GreetResponse(String greeting){}
+
+    class GreetResponse{
+        private String greeting;
+
+
+        GreetResponse(String greeting) {
+            this.greeting = greeting;
+        }
+
+        public String getGreeting() {
+            return greeting;
+        }
+
+        @Override
+        public String toString() {
+            return "GreetResponse{" +
+                    "greeting='" + greeting + '\'' +
+                    '}';
+        }
+    }
 
 }
